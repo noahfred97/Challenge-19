@@ -17,7 +17,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(MONGODB_URI, "mongodb+srv://Expertnoah:<noah108126>@cluster0.oftfu.mongodb.net/BudgetTracker=true&w=majority", {
+mongoose.connect(MONGODB_URI, "mongodb+srv://Expertnoah:noah108126@cluster0.oftfu.mongodb.net/BudgetTracker=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false
 });

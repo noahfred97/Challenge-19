@@ -17,13 +17,13 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(MONGODB_URI, "mongodb+srv://Expertnoah:noah108126@cluster0.oftfu.mongodb.net/BudgetTracker=true&w=majority", {
+mongoose.connect('mongodb://localhost:27017/budgettracker');{
   useNewUrlParser: true,
   useFindAndModify: false
 });
 
 // routes
-app.use(require("./routes/api.js"));
+app.use(require("./api.js"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);

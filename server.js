@@ -23,7 +23,7 @@ mongoose.connect(MONGODB_URI, "mongodb+srv://Expertnoah:noah108126@cluster0.oftf
 });
 
 // routes
-app.use(require("./routes/api/api.js"));
+app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
